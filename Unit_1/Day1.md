@@ -61,12 +61,12 @@ This ensures software is always ready to release.
 
 # Popular DevOps Tools
 
-Category                Tools
-
-Version Control         Git, GitHub, GitLab
-CI/CD                   Jenkins, GitHub Actions, gitLab CI
-Containers              Docker
-Orchestration           Kubernetes
-Monitoring              Prometheus, Grafana
-Configuration           Ansible, Chef, Puppet
-Cloud                   AWS, Azure, Google Cloud
+| Category | Tools |
+|--------|--------|
+| Version Control | Git, GitHub, GitLab |
+| CI/CD | Jenkins, GitHub Actions, GitLab CI |
+| Containers | Docker |
+| Orchestration | Kubernetes |
+| Monitoring | Prometheus, Grafana |
+| Configuration | Ansible, Chef, Puppet |
+| Cloud | AWS, Azure, Google Cloud |
