@@ -122,7 +122,7 @@ FLOW
 
 Developer → Git → CI/CD Pipeline → Docker Container → Kubernetes Deployment → Cloud
 
-* Containers allow:
+Containers allow:
 
 * continuous integration
 
