@@ -10,17 +10,6 @@ Each VM contains:
 
  It is like a real physical pc.
 
- ## Architecture of VM
-
-Physical Hardware
-       ↓
-Hypervisor (Virtualization Layer)
-       ↓
----------------------------------
-| VM1 | VM2 | VM3 |
-
-
-
 
 ----------------------------------------------------------------
 
@@ -54,17 +43,7 @@ A container is a lightweight virtualization technology that packages  an applica
 Containers share the host Operating System kernel instead of running seperate OS instances.
 
 
-## Container Architecture
 
-Physical Hardware
-       ↓
-Host Operating System
-       ↓
-Container Engine (Docker)
-       ↓
----------------------------------
-| Container1 | Container2 | Container3 |
----------------------------------
 Each container contains:
 Application + Dependencies
 
