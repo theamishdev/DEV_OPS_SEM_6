@@ -74,7 +74,6 @@ docker network ls
 
 docker network inspect mynetwork
 
-
 ---
 
 ## Summary
