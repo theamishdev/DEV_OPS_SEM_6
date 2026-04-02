@@ -107,6 +107,11 @@ report.txt notes.txt
 
 ---
 
+
+![Day 10 Image](../IMG/Day13.png)
+
+---
+
 ## 4. Key Learnings 🧠
 
 - File creation inside container  
