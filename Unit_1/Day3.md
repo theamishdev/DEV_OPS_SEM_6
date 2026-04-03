@@ -24,6 +24,13 @@ Container runtimes are broadly classified into two types:
 - Manage full container lifecycle
 - Provide CLI and APIs
 
+#### These handle:
+Image pulling
+Networking
+Storage
+Container lifecycle
+
+
 **Examples:**
 - Docker Engine
 - containerd
@@ -36,6 +43,14 @@ Container runtimes are broadly classified into two types:
 - Responsible for actually running containers
 - Directly interact with OS kernel
 - Execute container processes
+
+
+#### These directly interact with:
+Linux kernel
+Namespaces
+cgroups
+
+
 
 **Examples:**
 - runc (most commonly used)
