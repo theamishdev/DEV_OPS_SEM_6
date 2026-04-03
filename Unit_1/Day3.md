@@ -12,6 +12,8 @@ It handles:
 - Managing container lifecycle
 - Interacting with OS kernel features (namespaces, cgroups)
 
+---
+
 ### Types of Container Runtime
 
 Container runtimes are broadly classified into two types:
