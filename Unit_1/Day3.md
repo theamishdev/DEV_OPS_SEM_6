@@ -1,8 +1,75 @@
+# Container Runtime & Process Isolation
+
+---
+
+## 1. Container Runtime
+
+### Definition
+A **container runtime** is the software responsible for **running and managing containers** on a host system.
+
+It handles:
+- Starting and stopping containers
+- Managing container lifecycle
+- Interacting with OS kernel features (namespaces, cgroups)
+
+---
+
+### Examples
+
+- Docker Engine
+- containerd
+- CRI-O
+- runc (low-level runtime)
+
+---
+
+### Key Responsibilities
+
+- Pull container images
+- Create container environment
+- Apply namespaces and cgroups
+- Execute container processes
+
+---
+
+## 2. Process Isolation
+
+### Definition
+Process isolation ensures that **processes inside a container are isolated from processes in other containers and the host system**.
+
+---
+
+### How It Works
+
+- Achieved using **Namespaces**
+- Each container has:
+  - Its own process tree (PID namespace)
+  - Cannot see processes of other containers
+
+---
+
+### Example
+
+- A process inside container sees itself as:
+PID = 1
+
+- But on host system, it may have a different PID
+
+---
+
+### Benefits
+
+- Security between containers
+- Prevents interference
+- Independent execution environments
+
+---
+
 ## Namespaces and cgroups in Containers
 
 ---
 
-## 1. Namespaces
+## 3. Namespaces
 
 ### Definition
 Namespaces are a feature of the Linux kernel that provide **isolation** for containers.  
@@ -34,7 +101,7 @@ In simple terms, namespaces make a container feel like it is running on its **ow
 
 ---
 
-## 2. cgroups (Control Groups)
+## 4. cgroups (Control Groups)
 
 ### Definition
 cgroups (control groups) are a Linux kernel feature used to **limit, control, and monitor resource usage** of processes or containers.
@@ -60,7 +127,7 @@ They ensure that a container does not consume more resources than allocated.
 | Memory | Restricts RAM usage and prevents memory overflow |
 | Disk I/O | Controls read/write speed of storage devices |
 | Network Bandwidth | Limits network usage of containers |
-| Processes (PIDs) | Restr number of processes a container can create |
+| Processes (PIDs) | Restricts number of processes a container can create |
 
 ---
 
@@ -73,7 +140,7 @@ They ensure that a container does not consume more resources than allocated.
 
 ---
 
-## 3. Difference Between Namespaces and cgroups
+## 5. Difference Between Namespaces and cgroups
 
 | Feature | Namespaces | cgroups |
 |--------|-----------|---------|
@@ -84,8 +151,10 @@ They ensure that a container does not consume more resources than allocated.
 
 ---
 
-## 4. Summary
+## 6. Summary
 
+- **Container Runtime → Runs and manages containers**
+- **Process Isolation → Separates processes between containers**
 - **Namespaces → Isolation (what a container can see)**
 - **cgroups → Resource control (how much a container can use)**
 
