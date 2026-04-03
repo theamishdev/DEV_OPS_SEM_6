@@ -25,11 +25,10 @@ Container runtimes are broadly classified into two types:
 - Provide CLI and APIs
 
 #### These handle:
-Image pulling,
-Networking,
-Storage,
-Container lifecycle
-
+- Image pulling  
+- Networking  
+- Storage  
+- Container lifecycle  
 
 **Examples:**
 - Docker Engine
@@ -44,13 +43,10 @@ Container lifecycle
 - Directly interact with OS kernel
 - Execute container processes
 
-
 #### These directly interact with:
-Linux kernel,
-Namespaces,
-cgroups
-
-
+- Linux kernel  
+- Namespaces  
+- cgroups  
 
 **Examples:**
 - runc (most commonly used)
@@ -101,17 +97,11 @@ PID = 1
 
 ---
 
-## Namespaces and cgroups in Containers
-
----
-
 ## 3. Namespaces
 
 ### Definition
 Namespaces are a feature of the Linux kernel that provide **isolation** for containers.  
 They ensure that each container has its **own separate view of system resources**.
-
-In simple terms, namespaces make a container feel like it is running on its **own independent system**, even though it shares the same OS.
 
 ---
 
@@ -128,6 +118,42 @@ In simple terms, namespaces make a container feel like it is running on its **ow
 
 ---
 
+### 🔹 Network Namespace (Detailed Example)
+
+Containers can run applications on the **same port without conflict** because each container has its own isolated network stack.
+
+#### Example:
+
+Multiple Nginx containers all listen on port 80 internally:
+
+- Container 1: 172.17.0.2:80 → Nginx  
+- Container 2: 172.17.0.3:80 → Nginx  
+- Container 3: 172.17.0.4:80 → Nginx  
+
+👉 Each container has a unique IP, so no conflict occurs.
+
+---
+
+### 🔹 Mount Namespace
+
+- Each container has its own filesystem view  
+- File changes inside container do NOT affect host  
+
+---
+
+### 🔹 UTS Namespace
+
+- Allows each container to have its own hostname  
+
+---
+
+### 🔹 User Namespace (Advanced)
+
+- Maps container users to non-root users on host  
+- Improves security  
+
+---
+
 ### Key Points
 
 - Provides **isolation between containers**
@@ -141,8 +167,6 @@ In simple terms, namespaces make a container feel like it is running on its **ow
 
 ### Definition
 cgroups (control groups) are a Linux kernel feature used to **limit, control, and monitor resource usage** of processes or containers.
-
-They ensure that a container does not consume more resources than allocated.
 
 ---
 
