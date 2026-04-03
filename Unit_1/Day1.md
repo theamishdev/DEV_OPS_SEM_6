@@ -1,6 +1,6 @@
 # UNIT_1
 
-# What is DevOps?
+# Day 1: What is DevOps?
 
 1. DevOps is a set of practices, culture, and tools that integrates software development (Dev) and IT operations (Ops) to build, test, release, and deploy software faster and more reliably.
 

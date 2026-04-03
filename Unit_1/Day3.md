@@ -1,4 +1,4 @@
-# Day3: Container Runtime & Process Isolation
+# Day 3: Container Runtime & Process Isolation
 
 ---
 

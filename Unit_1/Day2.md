@@ -1,4 +1,4 @@
-# What is Virtual Machine
+# Day 2: What is Virtual Machine
 
 A Virtual Machine (VM) is a software-based computer that runs on top of physical hardware using a hypervisor.
 
