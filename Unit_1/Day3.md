@@ -113,7 +113,7 @@ They ensure that each container has its **own separate view of system resources*
 | Network Namespace | Provides separate network interfaces, IP addresses, ports, and routing tables. |
 | Mount Namespace | Isolates filesystem mount points. Each container has its own file system view. |
 | IPC Namespace | Isolates inter-process communication mechanisms like message queues and shared memory. |
-| UTS Namespace | Allows containers to have their own hostname and domain name. |
+| UTS Namespace(Unix Timesharing System) | Allows containers to have their own hostname and domain name. |
 | User Namespace | Maps user and group IDs, allowing containers to run as root internally but not on host. |
 
 ---
@@ -141,7 +141,7 @@ Multiple Nginx containers all listen on port 80 internally:
 
 ---
 
-### 🔹 UTS Namespace
+### 🔹 UTS(Unix Timesharing System) Namespace
 
 - Allows each container to have its own hostname  
 
