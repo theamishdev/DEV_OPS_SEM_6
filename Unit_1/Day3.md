@@ -12,14 +12,33 @@ It handles:
 - Managing container lifecycle
 - Interacting with OS kernel features (namespaces, cgroups)
 
----
+### Types of Container Runtime
 
-### Examples
+Container runtimes are broadly classified into two types:
 
+#### 1. High-Level Runtimes
+
+- User-facing tools
+- Manage full container lifecycle
+- Provide CLI and APIs
+
+**Examples:**
 - Docker Engine
 - containerd
 - CRI-O
-- runc (low-level runtime)
+
+---
+
+#### 2. Low-Level Runtimes
+
+- Responsible for actually running containers
+- Directly interact with OS kernel
+- Execute container processes
+
+**Examples:**
+- runc (most commonly used)
+- runv
+- kata-runtime (lightweight VM-based runtime)
 
 ---
 
