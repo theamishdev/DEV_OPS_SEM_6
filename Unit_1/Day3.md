@@ -25,9 +25,9 @@ Container runtimes are broadly classified into two types:
 - Provide CLI and APIs
 
 #### These handle:
-Image pulling
-Networking
-Storage
+Image pulling,
+Networking,
+Storage,
 Container lifecycle
 
 
@@ -46,8 +46,8 @@ Container lifecycle
 
 
 #### These directly interact with:
-Linux kernel
-Namespaces
+Linux kernel,
+Namespaces,
 cgroups
 
 
