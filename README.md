@@ -50,35 +50,48 @@ It is structured unit-wise according to the course syllabus and will include:
 ```
 DEV_OPS_SEM_6
 │
-├── Unit_1
-│   ├── Notes.md
-│   ├── Docker_Basics.md
+├── Unit_1/                  # Day 1 to Day 7 Study Notes
+│   ├── Day1.md ... Day7.md
+│   └── Tasks.md
 │
-├── Unit_2
-│   ├── Dockerfile.md
-│   ├── Container_Management.md
+├── Unit_2/                  # Day 9 to Day 14 Study Notes
+│   ├── Day9.md ... Day_14.md
+│   └── day_10.md
 │
-├── Unit_3
-│   ├── Docker_Compose.md
+├── Unit_3/                  # Day 15 to Day 23 Study Notes
+│   └── Day15.md ... Day23.md
 │
-├── Unit_4
-│   ├── Maven.md
+├── Unit_4/                  # Day 24 to Day 32 Study Notes
+│   └── Day24.md ... Day32.md
 │
-├── Unit_5
-│   ├── GitHub_Actions.md
+├── Unit_5/                  # Day 33 to Day 41 Study Notes
+│   └── Day33.md ... Day41.md
 │
-├── Unit_6
-│   ├── Jenkins.md
+├── Unit_6/                  # Day 42 to Day 50 Study Notes
+│   └── Day42.md ... Day50.md
 │
+├── Practticals/             # Lab Practical Code & Worksheets
+│   ├── practical_1.md       # Practical 1: Flask Dockerization
+│   ├── practical_2.md       # Practical 2: Multi-Stage Production CI/CD
+│   ├── practical_4.md       # Practical 4: Maven Automated Java Build
+│   ├── practical_5.md       # Practical 5: Docker Hub Push Automation
+│   ├── my-docker-app/       # Python Flask Docker repository
+│   └── my-maven-app/        # Java Maven repository
+│
+├── Notes/                   # Slides & Presentation files
+│   ├── UNIT 1.pptx
+│   └── Unit 2.ppt
+│
+├── IMG/                     # Inline media assets
+├── Syllabus.pdf             # Official Course Curriculum
 └── README.md
 ```
 
-Each unit will contain:
-
-- Concepts  
-- Commands  
-- Examples  
-- Diagrams  
+Each unit contains:
+- Detailed Concept Explanations
+- Terminal Commands and Snippets
+- Interactive Flowcharts / ASCII Diagrams
+- Summaries and Quick Check Lists
 
 ---
 
@@ -86,12 +99,12 @@ Each unit will contain:
 
 | Unit | Topic | Status |
 |-----|------|------|
-| 1 | DevOps Infrastructure & Containers | ⬜ |
-| 2 | Docker Image Building & Management | ⬜ |
-| 3 | Microservices with Docker Compose | ⬜ |
-| 4 | Maven Build Automation | ⬜ |
-| 5 | Continuous Integration (GitHub Actions) | ⬜ |
-| 6 | CI/CD with Jenkins | ⬜ |
+| 1 | DevOps Infrastructure & Containers | ✅ |
+| 2 | Docker Image Building & Management | ✅ |
+| 3 | Microservices with Docker Compose | ✅ |
+| 4 | Maven Build Automation | ✅ |
+| 5 | Continuous Integration (GitHub Actions) | ✅ |
+| 6 | CI/CD with Jenkins | ✅ |
 
 ---
 
@@ -115,7 +128,6 @@ Developer → GitHub → CI Build → Test → Docker Image → Registry → Dep
 ```
 
 Automation ensures:
-
 ✔ Faster releases  
 ✔ Fewer manual errors  
 ✔ Continuous delivery  
@@ -125,13 +137,11 @@ Automation ensures:
 # ⚙ Tools Covered
 
 <p align="center">
-
 <img src="https://skillicons.dev/icons?i=docker" width="60"/>
 <img src="https://skillicons.dev/icons?i=github" width="60"/>
 <img src="https://skillicons.dev/icons?i=jenkins" width="60"/>
 <img src="https://skillicons.dev/icons?i=maven" width="60"/>
 <img src="https://skillicons.dev/icons?i=linux" width="60"/>
-
 </p>
 
 ---
@@ -139,13 +149,13 @@ Automation ensures:
 # 🚀 Practical Experiments
 
 - Installing Docker
-- Docker commands
-- Writing Dockerfile
-- Docker volumes & networking
-- Docker Compose deployment
-- Jenkins installation
-- Creating CI/CD pipelines
-- GitHub Actions workflows
+- Docker CLI Operations
+- Writing Dockerfiles
+- Docker Volumes & Networking configurations
+- Multi-Container App deployment with Docker Compose
+- Maven automated builds & unit tests verification
+- Multi-job CI/CD pipelines in GitHub Actions
+- Jenkins configuration & pipelines integration
 
 ---
 
@@ -153,11 +163,11 @@ Automation ensures:
 
 | Skill | Progress |
 |------|---------|
-| Docker | █████░░░░ |
-| Docker Compose | ███░░░░░░ |
-| Maven | ███░░░░░░ |
-| GitHub Actions | ██░░░░░░░ |
-| Jenkins | ██░░░░░░░ |
+| Docker | █████████ |
+| Docker Compose | █████████ |
+| Maven | █████████ |
+| GitHub Actions | █████████ |
+| Jenkins | █████████ |
 
 ---
 
