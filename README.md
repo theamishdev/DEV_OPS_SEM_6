@@ -70,7 +70,7 @@ DEV_OPS_SEM_6
 ├── Unit_6/                  # Day 42 to Day 50 Study Notes
 │   └── Day42.md ... Day50.md
 │
-├── Practticals/             # Lab Practical Code & Worksheets
+├── Practicals/             # Lab Practical Code & Worksheets
 │   ├── practical_1.md       # Practical 1: Flask Dockerization
 │   ├── practical_2.md       # Practical 2: Multi-Stage Production CI/CD
 │   ├── practical_4.md       # Practical 4: Maven Automated Java Build
